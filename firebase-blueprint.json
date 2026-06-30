@@ -1,0 +1,19 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "A user in the community.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "contact": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "User profiles"
+    }
+  }
+}
